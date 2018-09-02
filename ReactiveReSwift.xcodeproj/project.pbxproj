@@ -75,6 +75,10 @@
 		9E1F6FBA1DEE810400912955 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6FB81DEE810400912955 /* Middleware.swift */; };
 		9E1F6FBB1DEE810400912955 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6FB81DEE810400912955 /* Middleware.swift */; };
 		9E1F6FBC1DEE810400912955 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1F6FB81DEE810400912955 /* Middleware.swift */; };
+		E160F39C1F9992C60058808F /* UnsafeMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = E160F39B1F9992C60058808F /* UnsafeMiddleware.swift */; };
+		E160F39D1F9992C60058808F /* UnsafeMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = E160F39B1F9992C60058808F /* UnsafeMiddleware.swift */; };
+		E160F39E1F9992C60058808F /* UnsafeMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = E160F39B1F9992C60058808F /* UnsafeMiddleware.swift */; };
+		E160F39F1F9992C60058808F /* UnsafeMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = E160F39B1F9992C60058808F /* UnsafeMiddleware.swift */; };
 		FC03AA1B1E26BF330034FBFA /* StandardActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC03AA1A1E26BF330034FBFA /* StandardActionTests.swift */; };
 		FC03AA1C1E26BF330034FBFA /* StandardActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC03AA1A1E26BF330034FBFA /* StandardActionTests.swift */; };
 		FC03AA1D1E26BF330034FBFA /* StandardActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC03AA1A1E26BF330034FBFA /* StandardActionTests.swift */; };
@@ -136,6 +140,7 @@
 		9E1F6F9A1DED120A00912955 /* ObservablePropertyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservablePropertyType.swift; sourceTree = "<group>"; };
 		9E1F6F9B1DED120A00912955 /* StreamType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamType.swift; sourceTree = "<group>"; };
 		9E1F6FB81DEE810400912955 /* Middleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		E160F39B1F9992C60058808F /* UnsafeMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsafeMiddleware.swift; sourceTree = "<group>"; };
 		FC03AA1A1E26BF330034FBFA /* StandardActionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardActionTests.swift; sourceTree = "<group>"; };
 		FC15F3FA1E21C72100CF4886 /* Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -254,6 +259,7 @@
 				9E1F6FB81DEE810400912955 /* Middleware.swift */,
 				9E1F6E7B1DDD190B00912955 /* Store.swift */,
 				625E66B81C1FFC880027C288 /* Reducer.swift */,
+				E160F39B1F9992C60058808F /* UnsafeMiddleware.swift */,
 			);
 			path = CoreTypes;
 			sourceTree = "<group>";
@@ -600,6 +606,7 @@
 				9E1F6F831DED0CB000912955 /* SubscriptionReferenceType.swift in Sources */,
 				9E1F6FA31DED120A00912955 /* StreamType.swift in Sources */,
 				9E1F6F8D1DED0D1100912955 /* ObservablePropertySubscriptionReference.swift in Sources */,
+				E160F39F1F9992C60058808F /* UnsafeMiddleware.swift in Sources */,
 				9E1F6F881DED0CEA00912955 /* ObservableProperty.swift in Sources */,
 				FC15F3FE1E21C72100CF4886 /* Coding.swift in Sources */,
 			);
@@ -618,6 +625,7 @@
 				9E1F6F821DED0CB000912955 /* SubscriptionReferenceType.swift in Sources */,
 				9E1F6FA21DED120A00912955 /* StreamType.swift in Sources */,
 				9E1F6F8C1DED0D1100912955 /* ObservablePropertySubscriptionReference.swift in Sources */,
+				E160F39E1F9992C60058808F /* UnsafeMiddleware.swift in Sources */,
 				9E1F6F871DED0CEA00912955 /* ObservableProperty.swift in Sources */,
 				FC15F3FD1E21C72100CF4886 /* Coding.swift in Sources */,
 			);
@@ -651,6 +659,7 @@
 				9E1F6F811DED0CB000912955 /* SubscriptionReferenceType.swift in Sources */,
 				9E1F6FA11DED120A00912955 /* StreamType.swift in Sources */,
 				9E1F6F8B1DED0D1100912955 /* ObservablePropertySubscriptionReference.swift in Sources */,
+				E160F39D1F9992C60058808F /* UnsafeMiddleware.swift in Sources */,
 				9E1F6F861DED0CEA00912955 /* ObservableProperty.swift in Sources */,
 				FC15F3FC1E21C72100CF4886 /* Coding.swift in Sources */,
 			);
@@ -684,6 +693,7 @@
 				9E1F6FA01DED120A00912955 /* StreamType.swift in Sources */,
 				9E1F6F8A1DED0D1100912955 /* ObservablePropertySubscriptionReference.swift in Sources */,
 				9E1F6F851DED0CEA00912955 /* ObservableProperty.swift in Sources */,
+				E160F39C1F9992C60058808F /* UnsafeMiddleware.swift in Sources */,
 				625E66BE1C1FFC880027C288 /* Reducer.swift in Sources */,
 				FC15F3FB1E21C72100CF4886 /* Coding.swift in Sources */,
 			);

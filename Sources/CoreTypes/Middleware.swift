@@ -10,7 +10,7 @@
  Middleware is a structure that allows you to modify, filter out and dispatch more
  actions, before the action being handled reaches the store.
  */
-public struct Middleware<State> {
+public class Middleware<State> {
     public typealias DispatchFunction = (Action...) -> Void
     public typealias GetState = () -> State
 
@@ -34,10 +34,15 @@ public struct Middleware<State> {
      Initialises the middleware by concatenating the transformative functions from
      the middleware that was passed in.
      */
-    public init(_ first: Middleware<State>, _ rest: Middleware<State>...) {
-        self = rest.reduce(first) {
-            $0.concat($1)
-        }
+    public init (_ first: Middleware<State>, _ rest: [Middleware<State>]) {
+      let reduced = rest.reduce(first) {
+        $0.concat($1)
+      }
+      self.transform = reduced.transform
+    }
+
+    convenience init(_ first: Middleware<State>, _ rest: Middleware<State>...) {
+        self.init(first, rest)
     }
 
     /// Safe encapsulation of side effects guaranteed not to affect the action being passed through the middleware.
